@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>發票系統</title>
+    <style>
+    table{
+
+    border:1px solid black;
+    padding:19px;
+
+    }
+
+    a{
+    text-decoration: none;
+    color:yellow;
+    background-color: black;
+    }
+
+    </style>
+</head>
+
+<body>
+        <h1>統一發票紀錄與兌獎</h1>
+        <form action="invoice.php" method="POST">
+            <span><a href="my_invoice.php">我的發票</a></span>
+            <span><a href="award_list.php">開始兌獎</a></span>
+            <span><a href="award_number.html">輸入獎號</a></span>
+        <table>
+            <tr>
+                <td>月份</td>
+                <td>當期發票</td>
+                <td>兌獎</td>
+                <td>輸入獎號</td>
+            </tr>
+            <tr>
+                <td colspan=4>                                  
+                    
+                    年份:<input type="text" name="year" id="year" maxlength="4"><br>
+                    期別:
+                        <select name="period" id="period"><br>
+                                <option value="1">1,2月</option>
+                                <option value="2">3,4月</option>
+                                <option value="3">5,6月</option>
+                                <option value="4">7,8月</option>
+                                <option value="5">9,10月</option>
+                                <option value="6">11,12月</option>
+                        </select>
+                    發票號碼:<input type="text" name="ennum" id="ennum" maxlength="2">
+                            <input type="text" name="number" id="number" maxlength="8"><br>
+                    發票金額:<input type="text" name="expend" id="expend"><br>
+                    <input type="submit" value="送出">
+    
+                </td>
+                                                       
+            </tr>
+        </table>
+        </form>
+
+</body>
+</html>
